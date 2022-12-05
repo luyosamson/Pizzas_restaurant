@@ -1,4 +1,5 @@
 class Restaurant < ApplicationRecord
-    has_many :pizza_restaurant
-    has_many :pizza, through: :pizza_restaurant
+    has_many :restaurant_pizza
+    has_many :pizza , through: :restaurant_pizza
+
 end
